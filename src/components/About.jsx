@@ -19,7 +19,7 @@ function About() {
         { name: 'Chairman Board of Trustee', image: Chairman, role: 'Chairman' }
     ];
     return (
-        <div className="flex flex-col justify-center items-center overflow-hidden mb-[100px] overflow-hidden">
+        <div className="flex flex-col justify-center items-center overflow-hidden mb-[100px] ">
             <div>
                 <h1 className="md:text-4xl text-3xl font-bold text-gray-900"> About Us</h1>
             </div>

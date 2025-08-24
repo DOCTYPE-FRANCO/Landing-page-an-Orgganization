@@ -9,10 +9,10 @@ function Navbar(){
         <div className="absolute top-0 left-0 w-full h-[50px] overflow-hidden">
             <div className="flex justify-center items-center h-full">
                 <ul className="hidden md:flex gap-8 text-black">
-                    <li><Link to="/#Header" className="cursor-pointer hover:text-gray-600 font-bold">Home</Link></li>
-                    <li><Link to="/#Header" className="cursor-pointer hover:text-gray-600 font-bold">Events</Link></li>
+                    <li><Link to="/" className="cursor-pointer hover:text-gray-600 font-bold">Home</Link></li>
+                    <li><Link to="/" className="cursor-pointer hover:text-gray-600 font-bold">Events</Link></li>
                     <li><Link to="/about" className="cursor-pointer hover:text-gray-600 font-bold">About-Us</Link></li>
-                    <li><Link to="/#Project" className="cursor-pointer hover:text-gray-600 font-bold">Contact</Link></li>
+                    <li><Link to="/" className="cursor-pointer hover:text-gray-600 font-bold">Contact</Link></li>
 
                 </ul>
 

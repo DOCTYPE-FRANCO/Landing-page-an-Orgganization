@@ -1,7 +1,6 @@
 import React from "react";
-import Navbar from "./Navbar";
 import Logo from "../assets/lekki.jpg"
-import Header from "../components/Header"
+
 
 
 function Herosection(){
