@@ -4,7 +4,7 @@ import Logo from "../assets/logo-lekki.jpg"
 
 function Header(){
     return(
-        <div className="flex flex-row justify-between items-center p-4 w-full ">
+        <div className="flex flex-row justify-between items-center p-4 w-full fixed top-0 bg-white z-50 ">
             <div>                
                 <img src={Logo} className="w-[100px]"/>
             </div>

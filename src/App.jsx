@@ -11,10 +11,12 @@ function App() {
     
       <div className='min-h-screen bg-white'>
         <Header/> 
-        <Routes>
-          <Route path="/" element={<Herosection />} />
-          <Route path="/about" element={<About />} />
-        </Routes>  
+        <div className='pt-32'>
+          <Routes>
+            <Route path="/" element={<Herosection />} />
+            <Route path="/about" element={<About />} />
+          </Routes>   
+        </div> 
         <Footer />    
         
         
