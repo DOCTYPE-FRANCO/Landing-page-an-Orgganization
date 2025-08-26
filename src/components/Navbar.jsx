@@ -10,9 +10,9 @@ function Navbar(){
             <div className="flex justify-center items-center h-full">
                 <ul className="hidden md:flex gap-8 text-black">
                     <li><Link to="/" className="cursor-pointer hover:text-gray-600 font-bold">Home</Link></li>
-                    <li><Link to="/" className="cursor-pointer hover:text-gray-600 font-bold">Events</Link></li>
+                    <li><Link to="/events" className="cursor-pointer hover:text-gray-600 font-bold">Events</Link></li>
                     <li><Link to="/about" className="cursor-pointer hover:text-gray-600 font-bold">About-Us</Link></li>
-                    <li><Link to="/" className="cursor-pointer hover:text-gray-600 font-bold">Contact</Link></li>
+                    <li><Link to="/contact" className="cursor-pointer hover:text-gray-600 font-bold">Contact</Link></li>
 
                 </ul>
 
@@ -24,15 +24,15 @@ function Navbar(){
                 
                 { /*  Mobile View */}
 
-                <div className={`${mobile? "bg-white fixed w-full h-full bottom-0 right-0 left-0 mt-[400px] z-50  items-center flex flex-col" : "h-0 w-0"}  gap-10`}>
+                <div className={`${mobile? "bg-white fixed w-full h-full bottom-0 right-0 left-0 mt-[400px] z-50  items-center flex flex-col" : "h-0 w-0"}  gap-20`}>
                     <div  className="flex flex-col justify-end items-end w-full p-4">
                         <img onClick={()=> setMobile(false)} src={X} className="w-[40px] h-[40px] justify-end "/>
                     </div>
-                    <ul className="text-3xl font-bold flex flex-col gap-7">
+                    <ul className="text-3xl font-bold flex flex-col gap-20">
                         <li onClick={()=> setMobile(false)} className="cursor-pointer hover:text-gray-600 font-bold"><Link to="/">Home</Link></li>
-                        <li onClick={()=> setMobile(false)} className="cursor-pointer hover:text-gray-600 font-bold">Events</li> 
+                        <li onClick={()=> setMobile(false)} className="cursor-pointer hover:text-gray-600 font-bold"><Link to="/events">Events</Link></li> 
                         <li onClick={()=> setMobile(false)} className="cursor-pointer hover:text-gray-600 font-bold"><Link to="/about">About</Link></li>
-                        <li onClick={()=> setMobile(false)} className="cursor-pointer hover:text-gray-600 font-bold">Contact</li>
+                        <li onClick={()=> setMobile(false)} className="cursor-pointer hover:text-gray-600 font-bold"><Link to="/contact">Contact</Link></li>
                                                
                     </ul>
                 </div>
