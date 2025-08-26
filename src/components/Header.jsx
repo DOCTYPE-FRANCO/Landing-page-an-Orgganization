@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
-import Logo from "../assets/logo-lekki.jpg"
+import Logo from "../assets/lekki.jpg"
 
 function Header(){
     return(
