@@ -6,6 +6,15 @@ import Treasurer from "../assets/treasurer.jpg";
 import Lawyer from "../assets/lawyer.jpg";
 import Provost from "../assets/provost.jpg";
 import PublicRel from "../assets/publicrel.jpg";
+import Orjison from "../assets/OrjisonChukwuka.jpg";
+import EmekaAnthony from "../assets/EnemchukwuAnthony.jpg";
+import VictorArase from "../assets/VictorArase.jpg";
+import NonsoFelix from "../assets/NonsoFelix.jpg";
+import ChukwuemekaAnosike from "../assets/ChukwuemekaAnosike.jpeg";
+import Joeigwe from "../assets/Joeigwe.jpg";
+import ChukwujekwuMadubuko from "../assets/ChukwujekwuMadubuko.jpg";
+import clementemeh from "../assets/clementemeh.jpg";
+import ChrisBuchi from "../assets/ChrisBuchi.jpg";
 
 function About() {
     const executives = [
@@ -16,7 +25,17 @@ function About() {
         { name: 'Lawyer', image: Lawyer, role: 'Legal Counsel' },
         { name: 'Provost', image: Provost, role: 'Provost' },
         { name: 'Public Relations Officer', image: PublicRel, role: 'PR Officer' },
-        { name: 'Chairman Board of Trustee', image: Chairman, role: 'Chairman' }
+        { name: 'Sir Chigozie Ijeomah ', image: Chairman, role: 'Chairman Board of Trustees' },
+        { name: 'Joe NWANNEBIKE Igwe ', image: Joeigwe, role: 'Disciplinary committee Chairman ' },
+        { name: 'Orjison chukwuka Charles ', image: Orjison, role: 'Member' },
+        { name: 'Enemchukwu Emeka Anthony ', image: EmekaAnthony, role: 'Member' },
+        { name: 'Mr. Victor Arase ', image: VictorArase, role: 'Member' },
+        { name: 'ORANUGO FELIX NONSO ', image: NonsoFelix, role: 'Member' },
+        { name: 'ChukwuEmeka Emmanuel Anosike', image: ChukwuemekaAnosike, role: 'Member' },
+        { name: 'Madubuko chukwujekwu Michael ', image: ChukwujekwuMadubuko, role: 'Member' },
+        { name: 'Emenike Clement Emeh ', image: clementemeh, role: 'Welfare - Member' },
+        { name: 'Nwosu Mmaduabuchi Christian ', image: ChrisBuchi, role: 'Member' },
+        
     ];
     return (
         <div className="flex flex-col justify-center items-center overflow-hidden mb-[100px] ">
@@ -35,7 +54,7 @@ function About() {
                 </p>
             </div>
             <div className="mt-20">
-                <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Our Leadership</h2>
+                <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Meet the Family</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-center items-center rounded-2xl px-10">
                     {executives.map((executive, index) => (
                         <div key={index} className="flex flex-col justify-center items-center mt-10 ">
