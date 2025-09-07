@@ -29,7 +29,7 @@ function About() {
         { name: 'Sir Chigozie Ijeomah', image: Chairman, role: 'Chairman Board of Trustees', business: 'Board' },
         { name: 'Joe NWANNEBIKE Igwe', image: Joeigwe, role: 'Disciplinary Committee Chairman', business: 'Disciplinary' },
         { name: 'Orjison chukwuka Charles', image: Orjison, role: 'Member', business: 'General' },
-        { name: 'Enemchukwu Emeka Anthony', image: EmekaAnthony, role: 'Member', business: 'General' },
+        { name: 'Enemchukwu Emeka ', image: EmekaAnthony, role: 'Member', business: 'General' },
         { name: 'Mr. Victor Arase', image: VictorArase, role: 'Member', business: 'General' },
         { name: 'ORANUGO FELIX NONSO', image: NonsoFelix, role: 'Member', business: 'General' },
         { name: 'ChukwuEmeka Emmanuel Anosike', image: ChukwuemekaAnosike, role: 'Member', business: 'General' },
@@ -38,6 +38,7 @@ function About() {
         { name: 'Nwosu Mmaduabuchi Christian', image: ChrisBuchi, role: 'Member', business: 'General' },
         { name: 'Chigozie Ijeaoma', image: Okenwa, role: 'Member', business: 'General' },
         { name: 'Emeka Udeogaranya', image: EmekaUdeo, role: 'Member', business: 'General' },
+        { name: 'Mr jude Duru ', image: EmekaUdeo, role: 'Member', business: 'General' },
     ];
 
     return (
