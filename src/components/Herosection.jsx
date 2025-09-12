@@ -11,19 +11,19 @@ function Herosection(){
                 <div className="flex flex-col mb-10 justify-center items-center gap-3 md:gap-10">
                     <div>
                         <p className="md:text-4xl text-3xl font-bold">Welcome to </p>
-                        <p className="text-green-600 text-4xl md:text-5xl mt-7 font-bold">Lekki Brothers Club</p>
-                    </div>
-
-                    <div>
-                         <p className="max-w-[330px] md:max-w-[450px] font-bold">
-                            <Typewriter 
+                        <p className="text-green-600 text-4xl md:text-5xl mt-7 font-bold">
+                           <Typewriter 
                                 options={{
-                                    strings: ["Stronger together, learning and growing, staying active, sharing good times, giving back, building friendships, finding purpose, enjoying moments, creating impact, leaving a positive mark wherever the journey takes us."],
+                                    strings: ["Lekki Brother Club"],
                                     autoStart: true,
                                     loop: true,
                                 }}
-                            />
-                         </p>
+                            /> 
+                        </p>
+                    </div>
+
+                    <div>
+                         <p className="max-w-[330px] md:max-w-[450px] font-bold">Stronger together, learning and growing, staying active, sharing good times, giving back, building friendships, finding purpose, enjoying moments, creating impact, leaving a positive mark wherever the journey takes us.</p>
                     </div>
                     
                 </div>
