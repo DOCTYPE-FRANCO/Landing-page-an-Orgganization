@@ -17,6 +17,7 @@ import clementemeh from "../assets/clementemeh.jpg";
 import ChrisBuchi from "../assets/ChrisBuchi.jpg";
 import Okenwa from "../assets/Okenwaedit.jpeg";
 import EmekaUdeo from "../assets/Emekaedit.jpeg";
+import JudeDuru from "../assets/judeduru.jpg"
 
 function About() {
     const executives = [
@@ -38,7 +39,7 @@ function About() {
         { name: 'Nwosu Mmaduabuchi Christian', image: ChrisBuchi, role: 'Member', business: 'General' },
         { name: 'Chigozie Ijeaoma', image: Okenwa, role: 'Member', business: 'General' },
         { name: 'Emeka Udeogaranya', image: EmekaUdeo, role: 'Member', business: 'General' },
-        { name: 'Mr jude Duru ', image: EmekaUdeo, role: 'Member', business: 'General' },
+        { name: 'Mr jude Duru ', image: JudeDuru, role: 'Member', business: 'General' },
     ];
 
     return (

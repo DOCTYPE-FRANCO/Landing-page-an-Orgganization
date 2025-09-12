@@ -6,7 +6,7 @@ import Logo from "../assets/lekki.jpg"
 function Herosection(){
     return(
         <>
-            <div className=" flex flex-col md:flex md:flex-row md:gap-[100px] justify-center items-center h-[400px] mt-[150px] md:mt-[15px] ">
+            <div className=" flex flex-col mb-10 md:flex md:flex-row md:gap-[100px] justify-center items-center h-[400px] mt-[150px] md:mt-[15px] ">
                 <div className="flex flex-col mb-10 justify-center items-center gap-3 md:gap-10">
                     <div>
                         <p className="md:text-4xl text-3xl font-bold">Welcome to </p>

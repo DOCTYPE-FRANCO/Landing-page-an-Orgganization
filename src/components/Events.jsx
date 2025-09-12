@@ -15,7 +15,7 @@ function Events(){
         title: 'September Meeting',
         date: 'September 20, 2025',
         time: '2:00 PM',
-        location: 'Lekki Homemade',
+        location: 'Lekki Homemade Bar',
         description: 'Connect with industry leaders and explore collaboration opportunities.',
         exclusive: false
         },
