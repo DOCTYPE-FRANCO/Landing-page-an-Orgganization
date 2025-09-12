@@ -14,9 +14,9 @@ function Herosection(){
                         <p className="text-green-600 text-4xl md:text-5xl mt-7 font-bold">
                            <Typewriter 
                                 options={{
-                                    strings: ["Lekki Brother Club"],
+                                    strings: ["Lekki Brother Club", "The Biggest Club in Africa"],
                                     autoStart: true,
-                                    loop: true,
+                                    loop: true
                                 }}
                             /> 
                         </p>
