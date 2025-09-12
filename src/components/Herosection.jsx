@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../assets/lekki.jpg"
+import Typewriter from 'typewriter-effect';
 
 
 
@@ -14,7 +15,15 @@ function Herosection(){
                     </div>
 
                     <div>
-                         <p className="max-w-[330px] md:max-w-[450px] font-bold">Stronger together, learning and growing, staying active, sharing good times, giving back, building friendships, finding purpose, enjoying moments, creating impact, leaving a positive mark wherever the journey takes us.</p>
+                         <p className="max-w-[330px] md:max-w-[450px] font-bold">
+                            <Typewriter 
+                                options={{
+                                    strings: ["Stronger together, learning and growing, staying active, sharing good times, giving back, building friendships, finding purpose, enjoying moments, creating impact, leaving a positive mark wherever the journey takes us."],
+                                    autoStart: true,
+                                    loop: true,
+                                }}
+                            />
+                         </p>
                     </div>
                     
                 </div>
