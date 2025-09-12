@@ -19,8 +19,8 @@ function Herosection(){
                     
                 </div>
                
-                <div className="w-[400px]">
-                   <img src={Logo} /> 
+                <div className="w-[400px] sm:pb-10">
+                   <img src={Logo} className="pb-10"/> 
                 </div>
             </div>
         </>
