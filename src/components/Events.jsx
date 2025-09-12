@@ -6,7 +6,7 @@ function Events(){
         id: 1,
         title: 'Burial Ceremony',
         date: 'August 22, 2025',
-        time: '7:00 PM',
+        time: '9:00 AM',
         location: 'Awka',
         description: 'Celebration of life for our Brothers Parent',
         exclusive: true
@@ -14,18 +14,18 @@ function Events(){
         {
         id: 2,
         title: 'September Meeting',
-        date: 'September 20, 2025',
+        date: 'September 27, 2025',
         time: '2:00 PM',
-        location: 'Lekki Homemade Bar',
+        location: 'Lekki Homemade Bar, Lagos',
         description: 'Connect with industry leaders and explore collaboration opportunities.',
         exclusive: false
         },
         {
         id: 3,
         title: 'Community Outreach',
-        date: 'February 10, 2025',
+        date: 'December 10, 2025',
         time: '10:00 AM',
-        location: 'Lekki Community Center',
+        location: 'Lekki Homemade Bar',
         description: 'Join us in making a difference in our local community.',
         exclusive: false
         }
