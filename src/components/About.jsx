@@ -64,7 +64,7 @@ function About() {
                     {executives.map((executive, index) => (
                         <div key={index} className="flex flex-col justify-center items-center mt-10 ">
                             <div className="relative overflow-hidden rounded-lg mb-4 w-full">
-                                <img src={executive.image} alt={executive.name} className="w-full h-64 object-cover object-top" />
+                                <img src={executive.image} alt={executive.name} className="w-full h-64 object-cover object-top hover:scale-110 transition-all duration-700" />
                             </div>
                             
                             <div className="flex flex-col gap-8 justify-center items-center">

@@ -1,4 +1,5 @@
 import React from "react";
+import {motion} from "framer-motion";
 function Events(){
     const events = [
         {
@@ -37,7 +38,13 @@ function Events(){
 
             <div className="flex flex-col md:flex-row gap-10 justify-center items-center">
                 {events.map((event, index) => (
-                    <div key={event.id} className="flex flex-col gap-3 shadow-2xl w-[350px] h-[300px] rounded-2xl p-10">
+                    <motion.div 
+                        key={event.id} 
+                        className="flex flex-col gap-3 shadow-2xl w-[350px] h-[300px] rounded-2xl p-10"
+                        initial = {{opacity: 0, x: 50}}
+                        animate={{opacity: 1, x:0}}
+                        transition={{duration: 1}}
+                        >
                         <div className="max-w-[250px] mb-6">
                             <h3 className="font-bold text-2xl text-green-500">{event.title}</h3>
                         </div>
@@ -53,7 +60,7 @@ function Events(){
                         <div>
                             <p className="text-gray-700">{event.title}</p>
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
         </div>
