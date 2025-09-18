@@ -59,7 +59,7 @@ function Herosection(){
                     modules={[Autoplay, Pagination, Navigation]}  
                     pagination={{ clickable: true }}
                     autoplay={{ delay: 2000, disableOnInteraction: false }}
-                    navigation={true}
+                    
                     loop={true}
                 >
                     <SwiperSlide>
