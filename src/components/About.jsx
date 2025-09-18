@@ -35,10 +35,9 @@ function About() {
         { name: 'Mr. Victor Arase', image: VictorArase, role: 'Member', business: 'General' },
         { name: 'ORANUGO FELIX NONSO', image: NonsoFelix, role: 'Member', business: 'General' },
         { name: 'ChukwuEmeka Emmanuel Anosike', image: ChukwuemekaAnosike, role: 'Member', business: 'General' },
-        { name: 'Madubuko chukwujekwu ', image: ChukwujekwuMadubuko, role: 'Member', business: 'General' },
-        { name: 'Emenike Clement Emeh', image: clementemeh, role: 'Welfare - Member', business: 'Welfare' },
+        { name: 'Madubuko chukwujekwu ', image: ChukwujekwuMadubuko, role: 'Tresurer', business: 'General' },
+        { name: 'Emenike Clement Emeh', image: clementemeh, role: 'Member', business: 'Welfare' },
         { name: 'Nwosu Mmaduabuchi Christian', image: ChrisBuchi, role: 'Member', business: 'General' },
-        { name: 'Chigozie Ijeaoma', image: Okenwa, role: 'Member', business: 'General' },
         { name: 'Emeka Udeogaranya', image: EmekaUdeo, role: 'Member', business: 'General' },
         { name: 'Mr jude Duru ', image: JudeDuru, role: 'Member', business: 'General' },
     ];
