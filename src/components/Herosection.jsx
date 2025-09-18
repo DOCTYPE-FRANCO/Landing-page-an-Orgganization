@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../assets/lekki.jpg"
 import Typewriter from 'typewriter-effect';
+import {motion} from "framer-motion"
 
 
 
@@ -14,9 +15,10 @@ function Herosection(){
                         <p className="text-green-600 text-4xl md:text-5xl mt-7 font-bold">
                            <Typewriter 
                                 options={{
-                                    strings: ["Lekki Brother Club", "Biggest Club in Africa"],
+                                    strings: ["Lekki Brother Club", "A Community of Growth"],
                                     autoStart: true,
-                                    loop: true
+                                    loop: true,
+                                    pauseFor : 5000
                                 }}
                             /> 
                         </p>
@@ -29,7 +31,12 @@ function Herosection(){
                 </div>
                
                 <div className="w-[400px] ">
-                   <img src={Logo}/> 
+                   <motion.img 
+                        src={Logo}
+                        initial={{opacity: 0, x: 100}}
+                        animate={{opacity: 1, x: 0}}
+                        transition={{duration: 1}}
+                   /> 
                 </div>
             </div>
         </div>
