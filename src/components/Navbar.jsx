@@ -24,7 +24,7 @@ function Navbar(){
                 
                 { /*  Mobile View */}
 
-                <div className={`${mobile? " bg-white fixed w-full h-[250px] top-0 z-50 items-center flex flex-col" : "h-0 w-0"}  gap-20`}>
+                <div className={`${mobile? " bg-white fixed w-full h-[280px] top-0 z-50 items-center flex flex-col" : "h-0 w-0"}  gap-20`}>
                     <div  className="flex flex-col justify-end items-end w-full">
                         <img onClick={()=> setMobile(false)} src={X} className="w-[40px] h-[40px] justify-end "/>
                     </div>
