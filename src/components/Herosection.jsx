@@ -3,6 +3,7 @@ import Logo from "../assets/lekki.jpg"
 import Typewriter from 'typewriter-effect';
 import {motion} from "motion/react"
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import 'swiper/css'
 import GroupPic1 from "../assets/GroupPic1.jpg"
 import GroupPic2 from "../assets/GroupPic2.jpg"
@@ -55,9 +56,14 @@ function Herosection(){
                     slidesPerView={2}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
+                    modules={[Autoplay, Pagination, Navigation]}  
+                    pagination={{ clickable: true }}
+                    autoplay={{ delay: 2000, disableOnInteraction: false }}
+                    navigation={true}
+                    loop={true}
                 >
                     <SwiperSlide>
-                        <img src={GroupPic1} className="md:w-[400px] rounded-2xl"/>
+                        <img src={GroupPic1} className="md:w-[400px] h-[200px] object- rounded-2xl"/>
                     </SwiperSlide>
 
                     <SwiperSlide>
