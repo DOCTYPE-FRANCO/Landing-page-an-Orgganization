@@ -4,6 +4,13 @@ import Typewriter from 'typewriter-effect';
 import {motion} from "motion/react"
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css'
+import GroupPic1 from "../assets/GroupPic1.jpg"
+import GroupPic2 from "../assets/GroupPic2.jpg"
+import GroupPic3 from "../assets/GroupPic3.jpg"
+import GroupPic4 from "../assets/GroupPic4.jpg"
+import GroupPic5 from "../assets/GroupPic5.jpg"
+import GroupPic6 from "../assets/GroupPic6.jpg"
+import GroupPic7 from "../assets/GroupPic7.jpg"
 
 
 
@@ -42,27 +49,39 @@ function Herosection(){
                 </div>
             </div>
 
-            <div>
+            <div className="mt-56">
                 <Swiper
-                    spaceBetween={40}
-                    slidesPerView={3}
+                    spaceBetween={20}
+                    slidesPerView={2}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                 >
                     <SwiperSlide>
-                        <img src=""/>
+                        <img src={GroupPic1} className="md:w-[400px] rounded-2xl"/>
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <img src=""/>
+                        <img src={GroupPic2} className="md:w-[400px] rounded-2xl"/>
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <img src=""/>
+                        <img src={GroupPic3} className="md:w-[400px] rounded-2xl"/>
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <img src=""/>
+                        <img src={GroupPic4} className="md:w-[400px] rounded-2xl"/>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <img src={GroupPic5} className="md:w-[400px] rounded-2xl"/>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <img src={GroupPic6} className="w-[200px] md:w-[400px] rounded-2xl"/>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <img src={GroupPic7} className="w-[200px] md:w-[400px] rounded-2xl"/>
                     </SwiperSlide>
 
                 </Swiper>
