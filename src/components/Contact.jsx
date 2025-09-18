@@ -14,13 +14,13 @@ function Contact(){
                     <div className="flex flex-row gap-2">
                         <img src={Location} className="w-[40px] h-[40px]"/>
                         <p className="font-bold">
-                            Lekki Homemade 
+                            Lekki Homemade Bar
                         </p>
                     </div>
                     <div className="flex flex-row gap-4">
                         <img src={Phone} className="w-[40px] h-[40px]"/>
                         <p className="font-bold">
-                            +234-123-456-789
+                            +234-803-966-4422
                         </p>
                     </div>
                     <div className="flex flex-row gap-2">

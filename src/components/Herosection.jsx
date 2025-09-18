@@ -22,10 +22,10 @@ function Herosection(){
                 <div className="flex flex-col mb-10 justify-center items-center gap-5 md:gap-10">
                     <div>
                         <p className="md:text-4xl text-2xl font-bold">Welcome to </p>
-                        <p className="text-green-600 text-3xl md:text-5xl mt-7 font-bold">
+                        <p className="text-green-600 text-3xl md:text-5xl mt-7 font-bold max-w-[300px] md:max-w-[500px]">
                            <Typewriter 
                                 options={{
-                                    strings: ["Lekki Brother Club 2024", "Fastest Growing Club"],
+                                    strings: ["Lekki Brother Club 2024", "Fastest Growing Club in Africa"],
                                     autoStart: true,
                                     loop: true,
                                     pauseFor : 5000

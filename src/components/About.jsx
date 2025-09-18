@@ -45,7 +45,7 @@ function About() {
     return (
         <div className="flex flex-col justify-center items-center overflow-hidden mb-[100px] ">
             <div>
-                <h1 className="md:text-4xl text-3xl font-bold text-gray-900"> About Us</h1>
+                <h1 className="md:text-4xl text-3xl font-bold text-gray-700"> About Us</h1>
             </div>
             <div>
                 <p className="md:max-w-[1150px] max-w-[350px] text-center mt-10 font-bold">
