@@ -22,7 +22,7 @@ import JudeDuru from "../assets/judeduru.jpg"
 
 function About() {
     const executives = [
-        { name: 'President', image: President, role: 'President', business: 'Management' },
+        { name: 'Prince Anthony Okpala', image: President, role: 'President', business: 'Management' },
         { name: 'Vice President', image: VP, role: 'Vice President', business: 'Management' },
         { name: 'Treasurer', image: Treasurer, role: 'Treasurer', business: 'Finance' },
         { name: 'Lawyer', image: Lawyer, role: 'Legal Counsel', business: 'Legal' },
