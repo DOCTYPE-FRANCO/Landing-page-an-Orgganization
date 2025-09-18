@@ -28,18 +28,18 @@ function About() {
         { name: 'Lawyer', image: Lawyer, role: 'Legal Counsel', business: 'Legal' },
         { name: 'Provost', image: Provost, role: 'Provost', business: 'Academics' },
         { name: 'Public Relations Officer', image: PublicRel, role: 'PR Officer', business: 'Communications' },
-        { name: 'Sir Chigozie Ijeomah', image: Chairman, role: 'Chairman Board of Trustees', business: 'Board' },
-        { name: 'Joe NWANNEBIKE Igwe', image: Joeigwe, role: 'Disciplinary Committee Chairman', business: 'Disciplinary' },
+        { name: 'Sir Chigozie Ijeomah', image: Chairman, role: 'Chairman Board of Trustees', business: 'CEO Lekki City Homes and Shelters LTD/Lekki Homemade restaurant and  bar. ' },
+        { name: 'Joe NWANNEBIKE Igwe', image: Joeigwe, role: 'Disciplinary Committee Chairman', business: 'Real estate consultancy ' },
         { name: 'Orjison chukwuka Charles', image: Orjison, role: 'Member', business: 'General' },
-        { name: 'Enemchukwu Emeka ', image: EmekaAnthony, role: 'Member', business: 'General' },
-        { name: 'Mr. Victor Arase', image: VictorArase, role: 'Member', business: 'General' },
-        { name: 'ORANUGO FELIX NONSO', image: NonsoFelix, role: 'Member', business: 'General' },
-        { name: 'ChukwuEmeka Emmanuel Anosike', image: ChukwuemekaAnosike, role: 'Member', business: 'General' },
-        { name: 'Madubuko chukwujekwu ', image: ChukwujekwuMadubuko, role: 'Tresurer', business: 'General' },
-        { name: 'Emenike Clement Emeh', image: clementemeh, role: 'Member', business: 'Welfare' },
-        { name: 'Nwosu Mmaduabuchi Christian', image: ChrisBuchi, role: 'Member', business: 'General' },
+        { name: 'Enemchukwu Emeka ', image: EmekaAnthony, role: 'Member', business: 'CEO Tonymeks Nigeria limited ' },
+        { name: 'Mr. Victor Arase', image: VictorArase, role: 'Member', business: 'Businessman/CEO' },
+        { name: 'ORANUGO FELIX NONSO', image: NonsoFelix, role: 'Member', business: 'CEO NONY OHAMS NIG LTD' },
+        { name: 'ChukwuEmeka Emmanuel Anosike', image: ChukwuemekaAnosike, role: 'Member', business: 'Real Estate ' },
+        { name: 'Madubuko chukwujekwu ', image: ChukwujekwuMadubuko, role: 'Tresurer', business: 'Forex (Bureau de change)' },
+        { name: 'Emenike Clement Emeh', image: clementemeh, role: 'Member', business: 'Real Estate' },
+        { name: 'Nwosu Mmaduabuchi Christian', image: ChrisBuchi, role: 'Member', business: 'C.E.O De Xclusive Citadel Impex Ltd Dealers in Textile, Consultant, Contractor and Auctioneer with NPF.' },
         { name: 'Emeka Udeogaranya', image: EmekaUdeo, role: 'Member', business: 'General' },
-        { name: 'Mr jude Duru ', image: JudeDuru, role: 'Member', business: 'General' },
+        { name: 'Mr jude Duru ', image: JudeDuru, role: 'Member', business: 'Lasduru global resources ' },
     ];
 
     return (
@@ -60,11 +60,11 @@ function About() {
             </div>
             <div className="mt-20">
                 <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Meet the Family</h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-center items-center rounded-2xl px-10">
+                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-center items-center rounded-2xl px-10 py-3">
                     {executives.map((executive, index) => (
                         <motion.div
                             key={index} 
-                            className="flex flex-col justify-center items-center mt-10 "
+                            className="flex flex-col justify-center items-center mt-10 shadow-md p-2 rounded-xl"
                             initial={{opacity:0 , y:50}}
                             animate={{opacity:1, y:0}}
                             transition={{duration: 1}}
@@ -75,8 +75,8 @@ function About() {
                             
                             <div className="flex flex-col gap-8 justify-center items-center">
                                 <h3 className="text-lg font-bold">{executive.name.toLocaleUpperCase()}</h3>
-                                <p>{}</p>
-                                <p className="text-sm">{executive.role}</p>
+                                <p className="text-gray-600 font-bold text-center">{executive.business}</p>
+                                <p className="text-sm font-semibold">{executive.role}</p>
                             </div>
                         </motion.div>
                     ))}
