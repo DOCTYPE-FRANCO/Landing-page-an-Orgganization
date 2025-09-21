@@ -23,10 +23,10 @@ import Callistus from "../assets/Callistus.jpg"
 
 function About() {
     const executives = [
-        { name: 'Prince Anthony Okpala', image: President, role: 'President', business: 'Management' },
-        { name: 'Callistus Chukwudubem', image: Callistus, role: 'Vice President', business: 'Management' },
+        { name: 'Prince Anthony Okpala', image: President, role: 'President', business: 'Real Estate / Buisness' },
+        { name: 'Callistus Chukwudubem', image: Callistus, role: 'Vice President', business: 'Real Estate / Business' },
         { name: 'Madubuko chukwujekwu', image: Treasurer, role: 'Treasurer', business: 'Forex (Bureau de change)' },
-        { name: 'Tony Ezeani', image: Lawyer, role: 'Legal Counsel', business: 'Legal' },
+        { name: 'Tony Ezeani', image: Lawyer, role: 'Legal Counsel', business: 'Lawyer' },
         { name: 'Provost', image: Provost, role: 'Provost', business: 'Academics' },
         { name: 'Godfrey Godfrey ', image: PublicRel, role: 'Public Relations Officer', business: 'Communications' },
         { name: 'Sir Chigozie Ijeomah', image: Chairman, role: 'Chairman Board of Trustees', business: 'CEO Lekki City Homes and Shelters LTD/Lekki Homemade restaurant and  bar. ' },

@@ -22,7 +22,7 @@ function Contact(){
         setFormData({name : "", email: "", message: ""})
     }
     return(
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center mb-20">
             <div className="flex justify-center items-center mt-5 pb-14">
                 <h1 className="text-3xl text-gray-700 font-bold">Contact Us</h1>
             </div>
@@ -49,7 +49,8 @@ function Contact(){
                     </div>
                 </div>
 
-                <div className="bg-green-500 w-[300px] h-[390px] md:w-[450px] md:h-[390px] rounded-2xl ">
+                <div className="bg-green-500 w-[300px] h-[450px] md:w-[450px] md:h-[450px] rounded-2xl ">
+                    <p className="text-2xl flex font-bold justify-center pt-4">Write us a Message</p>
                     <form onSubmit={handleSubmit} className="flex flex-col justify-center items-center mt-5 gap-2">
                         <label className="flex flex-col font-bold">
                             Name
