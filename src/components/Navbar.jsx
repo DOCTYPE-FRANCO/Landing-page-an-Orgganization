@@ -24,11 +24,11 @@ function Navbar(){
                 
                 { /*  Mobile View */}
 
-                <div className={`${mobile? " bg-white fixed w-full h-[280px] top-0 z-50 items-center flex flex-col" : "h-0 w-0"}  gap-20`}>
+                <div className={`${mobile? " bg-white fixed w-full h-[280px] top-0 z-50 items-center flex flex-col transition-all duration-200" : "h-0 w-0 transition-all duration-500"}  gap-20`}>
                     <div  className="flex flex-col justify-end items-end w-full">
                         <img onClick={()=> setMobile(false)} src={X} className="w-[40px] h-[40px] justify-end "/>
                     </div>
-                    <ul className="md:hidden text-2xl justify-center items-center font-bold flex flex-col gap-3  fixed top-20">
+                    <ul className="md:hidden text-2xl justify-center items-center font-bold flex flex-col gap-3 fixed top-20 ">
                         <li onClick={()=> setMobile(false)} className="border border-black text-center w-[200px] items-center cursor-pointer hover:text-gray-600 font-bold"><Link to="/">HOME</Link></li>
                         <li onClick={()=> setMobile(false)} className="border border-black text-center w-[200px] items-center cursor-pointer hover:text-gray-600 font-bold"><Link to="/events">EVENTS</Link></li> 
                         <li onClick={()=> setMobile(false)} className="border border-black text-center w-[200px] items-center cursor-pointer hover:text-gray-600 font-bold"><Link to="/about">ABOUT</Link></li>
