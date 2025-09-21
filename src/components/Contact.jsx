@@ -1,8 +1,26 @@
-import React from "react";
+import React,{useState}  from "react";
 import Location from "../assets/location.svg"
 import Phone from "../assets/phone.svg"
 import Mail from "../assets/mail.svg"
 function Contact(){
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        message: ""
+    });
+
+    function handleChange(e){
+        const {name, value} = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name] : value
+        }));
+    }
+
+    function handleSubmit(e){
+        e.preventDefault()
+        setFormData({name : "", email: "", message: ""})
+    }
     return(
         <div className="flex flex-col justify-center items-center">
             <div className="flex justify-center items-center mt-5 pb-14">
@@ -31,50 +49,50 @@ function Contact(){
                     </div>
                 </div>
 
-                <div className="flex flex-col gap-3 w-[400px] h-[550px] p-5 shadow-lg ">
-                    <div className="flex justify-center pb-4">
-                        <h2 className="text-2xl font-bold">Send Us a Message</h2>
-                    </div>
+                <div className="bg-green-500 w-[300px] h-[390px] md:w-[450px] md:h-[390px] rounded-2xl ">
+                    <form onSubmit={handleSubmit} className="flex flex-col justify-center items-center mt-5 gap-2">
+                        <label className="flex flex-col font-bold">
+                            Name
+                            <input
+                                type="text"
+                                name="name"
+                                value={formData.name}
+                                placeholder="Enter your name"
+                                onChange={handleChange}
+                                className="flex justify-center items-center border md:w-[350px] w-[250px] h-[50px] rounded-xs pl-5"
+                            />  
+                        </label>
 
-                    <div className="flex flex-col">
-                        <label>Full Name:</label>
-                        <input type="text" className="border border-black p-2"/>
-                    </div>
+                        <label className="flex flex-col font-bold">
+                            E-mail
+                            <input
+                                type="email"
+                                name="email"
+                                value={formData.email}
+                                placeholder="eg. youremail@gmail.com"
+                                onChange={handleChange}
+                                className="flex justify-center items-center border md:w-[350px] w-[250px] h-[50px] rounded-xs pl-5"
+                            />  
+                        </label>
 
-                     <div className="flex flex-col">
-                        <label>Email:</label>
-                        <input type="text" className="border border-black p-2"/>
-                    </div>
+                        <label className="flex flex-col font-bold">
+                            Message
+                            <input
+                                type="text"
+                                name="message"
+                                value={formData.message}
+                                placeholder="Write us a message"
+                                onChange={handleChange}
+                                className="flex border md:w-[350px] w-[250px] h-[100px] rounded-xs pl-5"
+                            />  
+                        </label>
 
-                     <div className="flex flex-col">
-                        <label>Phone Number: </label>
-                        <input type="tel" className="border border-black p-2"/>
-                    </div>
-
-                     <div className="flex flex-col">
-                        <label>Intrest</label>
-                        <select className="border border-black">
-                            <option value="general">General Inquiry</option>
-                            <option value="membership">Membership Application</option>
-                            <option value="events">Event Information</option>
-                            <option value="partnership">Partnership Opportunity</option>
-                        </select>
-
-                    </div>
-
-                     <div className="flex flex-col">
-                        <label>Write us a Message</label>
-                        <input type="text" className="border border-black p-5"/>
-                    </div>
-
-                    <div className="flex justify-center items-center">
-                        <button className="font-bold bg-green-400 text-white w-[100px] h-[50px] rounded-full hover:bg-slate-500">
-                            Submit
-                        </button>
-                    </div>
-                </div>
-            </div>
+                        <button className="font-bold m-2 text-white bg-black hover:text-black hover:bg-gray-400 px-6 py-3 md:px-8 rounded-full active:bg-gray-600">Send</button>
+                    </form>
+                </div>    
+            </div>             
         </div>
+    
     );
 }
 
