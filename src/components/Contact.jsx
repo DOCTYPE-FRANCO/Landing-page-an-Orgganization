@@ -51,7 +51,7 @@ function Contact(){
 
                 <div className="bg-green-500 w-[300px] h-[450px] md:w-[450px] md:h-[450px] rounded-2xl ">
                     <p className="text-2xl flex font-bold justify-center pt-4">Write us a Message</p>
-                    <form onSubmit={handleSubmit} className="flex flex-col justify-center items-center mt-5 gap-2">
+                    <form action="https://formspree.io/f/manpyzwk" method="post" className="flex flex-col justify-center items-center mt-5 gap-2">
                         <label className="flex flex-col font-bold">
                             Name
                             <input
