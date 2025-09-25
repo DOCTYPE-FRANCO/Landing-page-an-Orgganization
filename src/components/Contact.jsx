@@ -1,4 +1,4 @@
-import React,{useState}  from "react";
+import React, {useState}  from "react";
 import Location from "../assets/location.svg"
 import Phone from "../assets/phone.svg"
 import Mail from "../assets/mail.svg"
