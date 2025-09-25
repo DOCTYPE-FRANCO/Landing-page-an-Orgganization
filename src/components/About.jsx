@@ -1,5 +1,6 @@
 import React from "react";
 import {motion} from "framer-motion"
+import SEO from "./SEO";
 import Chairman from "../assets/chairman.jpg";
 import President from "../assets/president.jpg";
 import VP from "../assets/VP.jpg";
@@ -46,6 +47,11 @@ function About() {
 
     return (
         <div className="flex flex-col justify-center items-center overflow-hidden mb-[100px] ">
+            <SEO 
+                title="About Us - Lekki Brothers Club Leadership & Members"
+                description="Meet the leadership and members of Lekki Brothers Club. Learn about our mission, values, and the dedicated individuals who make our community thrive in Lagos, Nigeria."
+                url="https://www.lekkibrothers.com.ng/about"
+            />
             <div>
                 <h1 className="md:text-4xl text-3xl font-bold text-gray-700"> About Us</h1>
             </div>

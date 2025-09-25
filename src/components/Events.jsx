@@ -1,5 +1,6 @@
 import React from "react";
 import {motion} from "framer-motion";
+import SEO from "./SEO";
 function Events(){
     const events = [
         {
@@ -32,6 +33,11 @@ function Events(){
     ];
     return(
         <div>
+            <SEO 
+                title="Events - Lekki Brothers Club Community Activities"
+                description="Discover upcoming events and activities at Lekki Brothers Club. Join our community meetings, networking events, and outreach programs in Lagos, Nigeria."
+                url="https://www.lekkibrothers.com.ng/events"
+            />
             <div className="flex justify-center items-center mb-10 mt-5">
                 <h1  className="text-gray-700 text-4xl font-bold">Events</h1>
             </div>

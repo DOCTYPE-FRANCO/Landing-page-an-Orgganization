@@ -2,6 +2,7 @@ import React, {useState}  from "react";
 import Location from "../assets/location.svg"
 import Phone from "../assets/phone.svg"
 import Mail from "../assets/mail.svg"
+import SEO from "./SEO";
 function Contact(){
     const [formData, setFormData] = useState({
         name: "",
@@ -23,6 +24,11 @@ function Contact(){
     }
     return(
         <div className="flex flex-col justify-center items-center mb-20">
+            <SEO 
+                title="Contact Us - Get in Touch with Lekki Brothers Club"
+                description="Contact Lekki Brothers Club in Lagos, Nigeria. Reach out to join our community, learn about membership, or get information about our events and activities."
+                url="https://www.lekkibrothers.com.ng/contact"
+            />
             <div className="flex justify-center items-center mt-5 pb-14">
                 <h1 className="text-3xl text-gray-700 font-bold">Contact Us</h1>
             </div>
