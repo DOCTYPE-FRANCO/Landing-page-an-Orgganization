@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Logo from "../assets/lekki.jpg"
 import Typewriter from 'typewriter-effect';
 import {motion} from "motion/react"
@@ -16,6 +16,11 @@ import GroupPic7 from "../assets/GroupPic7.jpg"
 
 
 function Herosection(){
+    const [selectedPic, setSelectedPic] = useState(null);
+
+    function select(img){
+        setSelectedPic(img);
+    }
     return(
         <div className="mb-[150px]">
             <div className=" flex flex-col mb-10 md:flex md:flex-row md:gap-[100px] justify-center items-center h-[400px] mt-[180px] md:mt-[15px] ">
@@ -63,35 +68,54 @@ function Herosection(){
                     loop={true}
                 >
                     <SwiperSlide>
-                        <img src={GroupPic1} className="md:w-[400px] h-[200px] object- rounded-2xl"/>
+                        <img src={GroupPic1} onClick={() => select(GroupPic1)} className="md:w-[400px] h-[200px] object- rounded-2xl"/>
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <img src={GroupPic2} className="md:w-[400px] rounded-2xl"/>
+                        <img src={GroupPic2} onClick={() => select(GroupPic2)} className="md:w-[400px] rounded-2xl"/>
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <img src={GroupPic3} className="md:w-[400px] rounded-2xl"/>
+                        <img src={GroupPic3} onClick={() => select(GroupPic3)} className="md:w-[400px] rounded-2xl"/>
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <img src={GroupPic4} className="md:w-[400px] rounded-2xl"/>
+                        <img src={GroupPic4} onClick={() => select(GroupPic4)} className="md:w-[400px] rounded-2xl"/>
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <img src={GroupPic5} className="md:w-[400px] rounded-2xl"/>
+                        <img src={GroupPic5} onClick={() => select(GroupPic5)} className="md:w-[400px] rounded-2xl"/>
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <img src={GroupPic6} className="w-[200px] md:w-[400px] rounded-2xl"/>
+                        <img src={GroupPic6} onClick={() => select(GroupPic6)} className="w-[200px] md:w-[400px] rounded-2xl"/>
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <img src={GroupPic7} className="w-[200px] md:w-[400px] rounded-2xl"/>
+                        <img src={GroupPic7} onClick={() => select(GroupPic7)} className="w-[200px] md:w-[400px] rounded-2xl"/>
                     </SwiperSlide>
 
                 </Swiper>
             </div>
+            
+            {selectedPic && (
+                <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
+                    <div className="relative">
+                        <img 
+                            src={selectedPic} 
+                            alt="Selected" 
+                            className="max-w-[90vw] max-h-[80vh] rounded-xl shadow-lg"
+                        />
+                        <button 
+                            onClick={() => setSelectedPic(null)} 
+                            className="absolute top-2 right-2 bg-white px-3 py-1 rounded-full shadow-md"
+                        >
+                            ✖
+                        </button>
+                    </div>
+                </div>
+            )}
+
         </div>
     );
 }

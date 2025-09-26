@@ -44,7 +44,7 @@ function Contact(){
                     <div className="flex flex-row gap-2">
                         <img src={Mail} className="w-[40px] h-[40px]"/>
                         <p className="font-bold">
-                            lekkibrother@gmail.com
+                            lekkibrothers@gmail.com
                         </p>
                     </div>
                 </div>
