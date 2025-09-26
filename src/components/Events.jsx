@@ -7,7 +7,7 @@ function Events(){
         id: 1,
         title: 'Burial Ceremony',
         date: 'August 22, 2025',
-        time: '9:00 AM',
+        time: '11:00 AM',
         location: 'Awka',
         description: 'Celebration of life for our Brothers Parent',
         exclusive: true
@@ -15,7 +15,7 @@ function Events(){
         {
         id: 2,
         title: 'September Meeting',
-        date: 'September 27, 2025',
+        date: 'September 28, 2025',
         time: '2:00 PM',
         location: 'Lekki Homemade Bar, Lagos',
         description: 'Connect with industry leaders and explore collaboration opportunities.',
