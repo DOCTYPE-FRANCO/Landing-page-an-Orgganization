@@ -12,6 +12,7 @@ import GroupPic4 from "../assets/GroupPic4.jpg"
 import GroupPic5 from "../assets/GroupPic5.jpg"
 import GroupPic6 from "../assets/GroupPic6.jpg"
 import GroupPic7 from "../assets/GroupPic7.jpg"
+import SEO from "./SEO";
 
 
 
@@ -23,6 +24,11 @@ function Herosection(){
     }
     return(
         <div className="mb-[150px]">
+            <SEO 
+                title="Lekki Brothers Club - Premier Social Organization in Lagos, Nigeria"
+                description="Join Lekki Brothers Club, Lagos' fastest growing social organization fostering brotherhood, community development, and networking opportunities. Stronger together, learning and growing."
+                url="https://www.lekkibrothers.com.ng/"
+            />
             <div className=" flex flex-col mb-10 md:flex md:flex-row md:gap-[100px] justify-center items-center h-[400px] mt-[180px] md:mt-[15px] ">
                 <div className="flex flex-col mb-10 justify-center items-center gap-5 md:gap-10">
                     <div>
