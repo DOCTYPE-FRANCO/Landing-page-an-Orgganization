@@ -111,7 +111,7 @@ function Herosection(){
                             src={selectedPic} 
                             alt="Selected" 
                             className="max-w-[90vw] max-h-[80vh] rounded-xl shadow-lg"
-                        />
+                        /> 
                         <button 
                             onClick={() => setSelectedPic(null)} 
                             className="absolute top-2 right-2 bg-white px-3 py-1 rounded-full shadow-md"
