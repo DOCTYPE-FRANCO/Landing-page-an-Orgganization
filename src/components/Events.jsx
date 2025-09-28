@@ -16,7 +16,7 @@ function Events(){
         id: 2,
         title: 'September Meeting',
         date: 'September 28, 2025',
-        time: '2:00 PM',
+        time: '4:30 PM',
         location: 'Lekki Homemade Bar, Lagos',
         description: 'Connect with industry leaders and explore collaboration opportunities.',
         exclusive: false
