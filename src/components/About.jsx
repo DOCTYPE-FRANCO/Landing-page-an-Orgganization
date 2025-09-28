@@ -19,7 +19,7 @@ import ChrisBuchi from "../assets/ChrisBuchi.jpg";
 import Okenwa from "../assets/Okenwaedit.jpeg";
 import EmekaUdeo from "../assets/Emekaedit.jpeg";
 import JudeDuru from "../assets/judeduru.jpg"
-import Chika from "../assets/ChikaEkwunife.jpg"
+import Chika from "../assets/ChikaE.jpg"
 import Callistus from "../assets/Callistus.jpg"
 
 function About() {
